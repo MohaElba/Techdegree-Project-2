@@ -2,12 +2,13 @@
 
 body {
     font: 400 1em/1.5 'Lora', cursive, Helvetica, sans-serif;
+    margin: 0;
     text-align: center;
 }
 
 .container {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 img {
@@ -40,7 +41,7 @@ header nav li {
     padding: 10px 0;
 }
 
-h2 .portfolio  {
+.portfolio  {
     text-transform: uppercase;
     margin-bottom: 70px;
 }
@@ -143,14 +144,27 @@ a {
     .main-intro {
         float: left;
     }
-    h2 .portfolio {
-        
-    }
     .marketing {
         width: 46.5%;
         float: left;
     }
     .search {
+        width: 46.5%;
+        float: right;
+    }
+    .travel {
+        width: 46.5%;
+        float: left;
+    }
+    .map {
+        width: 46.5%;
+        float: right;
+    }
+    .photo {
+        width: 46.5%;
+        float: left;
+    }
+    .calculator {
         width: 46.5%;
         float: right;
     }
