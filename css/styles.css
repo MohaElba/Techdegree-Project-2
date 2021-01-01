@@ -1,0 +1,157 @@
+/* General Layout -------------------------*/
+
+body {
+    font: 400 1em/1.5 'Lora', cursive, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Header -------------------------*/
+
+.main-header {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.main-header nav {
+    margin-bottom: 70px;
+}
+
+/* Main -------------------------*/
+
+.profile-image {
+    margin-bottom: 30px;
+}
+
+header nav li {
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+h2 .portfolio  {
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.main-intro {
+    color: rgb(99, 93, 93);
+    margin-bottom: 90px;
+}
+
+article {
+    margin: 50px 0;
+}
+
+article img {
+    margin-top: 50px;
+}
+
+/* Footer -------------------------*/
+
+.main-footer {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.main-footer h2 {
+    text-transform: uppercase;
+}
+
+.back-to-top {
+    text-transform: uppercase;
+}
+
+.main-footer p {
+    color: rgb(99, 93, 93);
+}
+
+.sub-footer {
+    color: black;
+    margin-top: 70px;
+}
+
+.top-border {
+    border-top: 2px solid lightgrey;
+}
+
+.sub-footer span {
+    float: left;
+    padding: 20px;
+}
+
+.sub-footer a {
+    float: right;
+    padding: 20px;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+/* Links -------------------------*/
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+/* Float Clearfix -------------------------*/
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries -------------------------*/
+
+@media (max-width: 320px) {
+    .profile-image {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    header nav li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    /* Floated Columns -------------------------*/
+    .profile-image,
+    .main-intro {
+        width: 46.5%;
+    }
+
+    .profile-image {
+        float: right;
+    }
+    .main-intro {
+        float: left;
+    }
+    h2 .portfolio {
+        
+    }
+    .marketing {
+        width: 46.5%;
+        float: left;
+    }
+    .search {
+        width: 46.5%;
+        float: right;
+    }
+}
