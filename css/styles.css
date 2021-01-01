@@ -41,14 +41,18 @@ header nav li {
     padding: 10px 0;
 }
 
-.portfolio  {
-    text-transform: uppercase;
-    margin-bottom: 70px;
-}
-
 .main-intro {
     color: rgb(99, 93, 93);
-    margin-bottom: 90px;
+}
+
+.portfolio h2 {
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.portfolio article h2 {
+    text-transform: none;
+    margin-top: 50px;
 }
 
 article {
@@ -61,20 +65,23 @@ article img {
 
 /* Footer -------------------------*/
 
-.main-footer {
+footer {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
-.main-footer h2 {
+footer h2 {
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .back-to-top {
     text-transform: uppercase;
 }
 
-.main-footer p {
+footer p {
+    width: 80%;
+    margin: 0 auto;
     color: rgb(99, 93, 93);
 }
 
@@ -83,7 +90,7 @@ article img {
     margin-top: 70px;
 }
 
-.top-border {
+footer .top-border {
     border-top: 2px solid lightgrey;
 }
 
@@ -97,8 +104,13 @@ article img {
     padding: 20px;
 }
 
+.sub-footer aside {
+    display: none;
+}
+
 .contact {
-    margin-top: 30px;
+    margin: 30px 0;
+    line-height: 3;
 }
 
 /* Links -------------------------*/
@@ -132,17 +144,39 @@ a {
         display: inline-block;
         margin-right: 30px;
     }
+    .portfolio article h2 {
+        margin-top: 20px;
+    }
+    article {
+        margin: 30px 0;
+    }
+    .main-footer {
+        width: 72%;
+        margin: 0 auto;
+    }
+    .back-to-top {
+        display: none;
+    }
+    .sub-footer aside {
+        display: inline;
+    }
+    .sub-footer aside li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: 900;
+    }
     /* Floated Columns -------------------------*/
     .profile-image,
     .main-intro {
         width: 46.5%;
     }
-
     .profile-image {
         float: right;
     }
     .main-intro {
         float: left;
+        text-align: left;
     }
     .marketing {
         width: 46.5%;
@@ -167,5 +201,8 @@ a {
     .calculator {
         width: 46.5%;
         float: right;
+    }
+    article img {
+        margin-top: 0;
     }
 }
