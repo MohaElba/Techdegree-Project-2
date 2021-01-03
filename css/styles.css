@@ -125,7 +125,7 @@ a {
 
 /* Float Clearfix -------------------------*/
 
-.group:after {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
@@ -140,37 +140,26 @@ a {
 }
 
 @media (min-width: 768px) {
+    /* Header -------------------------*/
     header nav li {
         display: inline-block;
         margin-right: 30px;
     }
+    /* Main -------------------------*/
     .portfolio article h2 {
         margin-top: 20px;
     }
     article {
         margin: 30px 0;
     }
-    .main-footer {
-        width: 72%;
-        margin: 0 auto;
-    }
-    .back-to-top {
-        display: none;
-    }
-    .sub-footer aside {
-        display: inline;
-    }
-    .sub-footer aside li {
-        display: inline-block;
-        text-transform: uppercase;
-        font-size: small;
-        font-weight: 900;
-    }
-    /* Floated Columns -------------------------*/
     .profile-image,
     .main-intro {
         width: 46.5%;
     }
+    article img {
+        margin-top: 0;
+    }
+    /* Floated Columns -------------------------*/
     .profile-image {
         float: right;
     }
@@ -202,7 +191,50 @@ a {
         width: 46.5%;
         float: right;
     }
-    article img {
-        margin-top: 0;
+    /* Footer -------------------------*/
+    .main-footer {
+        width: 72%;
+        margin: 0 auto;
     }
+    .back-to-top {
+        display: none;
+    }
+    .sub-footer aside {
+        display: inline;
+    }
+    .sub-footer ul {
+        margin: 0;
+    }
+    .sub-footer aside li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: 900;
+    }
+    footer {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Header -------------------------*/
+    .main-header {
+        width: 100%;
+    }
+    .main-header .container {
+        position: relative;
+    }
+    header h1, nav {
+        width: 46.5%;
+    }
+    header h1 {
+        float: left;
+        position: absolute;
+        right: 60%;
+    }
+    header nav {
+        float: right;
+        position: absolute;
+        left: 60%;
+    } 
 }
