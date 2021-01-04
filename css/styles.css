@@ -32,6 +32,7 @@ img {
 
 .profile-image {
     margin-bottom: 30px;
+    max-width: 30%;
 }
 
 header nav li {
@@ -45,12 +46,12 @@ header nav li {
     color: rgb(99, 93, 93);
 }
 
-.portfolio h2 {
+#portfolio h2 {
     text-transform: uppercase;
     margin-top: 100px;
 }
 
-.portfolio article h2 {
+#portfolio article h2 {
     text-transform: none;
     margin-top: 50px;
 }
@@ -146,7 +147,7 @@ a {
         margin-right: 30px;
     }
     /* Main -------------------------*/
-    .portfolio article h2 {
+    #portfolio article h2 {
         margin-top: 20px;
     }
     article {
@@ -168,27 +169,27 @@ a {
         text-align: left;
     }
     .marketing {
-        width: 46.5%;
+        width: 42%;
         float: left;
     }
     .search {
-        width: 46.5%;
+        width: 42%;
         float: right;
     }
     .travel {
-        width: 46.5%;
+        width: 42%;
         float: left;
     }
     .map {
-        width: 46.5%;
+        width: 42%;
         float: right;
     }
     .photo {
-        width: 46.5%;
+        width: 42%;
         float: left;
     }
     .calculator {
-        width: 46.5%;
+        width: 42%;
         float: right;
     }
     /* Footer -------------------------*/
@@ -202,6 +203,9 @@ a {
     .sub-footer aside {
         display: inline;
     }
+    .sub-footer aside {
+        float: right;
+    }
     .sub-footer ul {
         margin: 0;
     }
@@ -212,17 +216,19 @@ a {
         font-weight: 900;
     }
     footer {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 }
 
 @media (min-width: 1024px) {
     /* Header -------------------------*/
-    .main-header {
-        width: 100%;
+    .container {
+        width: 90%;
     }
-    .main-header .container {
+    .main-header {
         position: relative;
+        margin-top: 0;
+        height: 100px;
     }
     header h1, nav {
         width: 46.5%;
@@ -230,11 +236,47 @@ a {
     header h1 {
         float: left;
         position: absolute;
-        right: 60%;
+        right: 58%;
     }
     header nav {
         float: right;
         position: absolute;
-        left: 60%;
-    } 
+        left: 57%;
+    }
+    /* Main -------------------------*/
+    .marketing {
+        width: 30%;
+        float: left;
+    }
+    .search {
+        width: 30%;
+        float: left;
+        display: inline-block;
+        margin-left: 5%;
+    }
+    .travel {
+        width: 30%;
+        float: right;
+    }
+    .map {
+        width: 30%;
+        float: left;
+    }
+    .photo {
+        width: 30%;
+        float: left;
+        display: inline-block;
+        margin-left: 5%;
+    }
+    .calculator {
+        width: 30%;
+        float: right;
+    }
+    /* Footer -------------------------*/
+    .main-footer {
+        width: 55%
+    }
+    footer {
+        margin-bottom: 0;
+    }
 }
