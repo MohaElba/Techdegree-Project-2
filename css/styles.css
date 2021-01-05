@@ -1,7 +1,7 @@
 /* General Layout -------------------------*/
 
 body {
-    font: 400 1em/1.5 'Lora', cursive, Helvetica, sans-serif;
+    font: 400 1em/1.5 'Lora', 'Redressed', cursive, Helvetica, sans-serif;
     margin: 0;
     text-align: center;
 }
@@ -21,18 +21,11 @@ img {
 
 .main-header {
     width: 100%;
-    margin-top: 40px;
-}
-
-.main-header nav {
+    padding-top: 40px;
+    background-image: linear-gradient(0, rgb(83, 52, 197), rgb(22, 8, 59));
     margin-bottom: 70px;
-}
-
-/* Main -------------------------*/
-
-.profile-image {
-    margin-bottom: 30px;
-    max-width: 30%;
+    display: inline-block;
+    color: white;
 }
 
 header nav li {
@@ -40,6 +33,20 @@ header nav li {
     display: block;
     margin-top: 10px;
     padding: 10px 0;
+}
+
+header a {
+    color: white;
+}
+
+/* Main -------------------------*/
+
+.profile-image {
+    border: 2px solid rgb(207, 210, 214);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    max-width: 30%;
+    box-sizing: border-box;
 }
 
 .main-intro {
@@ -64,6 +71,23 @@ article img {
     margin-top: 50px;
 }
 
+#skills {
+    margin-top: 100px;
+}
+
+#skills h2 {
+    text-transform: uppercase;
+}
+
+#skills li {
+    border-radius: 10px;
+    display: inline-block;
+    background: #2b3bc5;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
 /* Footer -------------------------*/
 
 footer {
@@ -74,6 +98,11 @@ footer {
 footer h2 {
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+
+.sub-footer span,
+.sub-footer a {
+    color: white;
 }
 
 .back-to-top {
@@ -89,6 +118,7 @@ footer p {
 .sub-footer {
     color: black;
     margin-top: 70px;
+    background-image: linear-gradient(rgb(83, 52, 197), rgb(22, 8, 59));
 }
 
 footer .top-border {
@@ -122,6 +152,10 @@ a:link {
 
 a {
     color: black;
+}
+
+a:hover {
+    color:rgb(20, 19, 22)
 }
 
 /* Float Clearfix -------------------------*/
@@ -192,13 +226,19 @@ a {
         width: 42%;
         float: right;
     }
+    #skills {
+        float: right;
+    }
     /* Footer -------------------------*/
     .main-footer {
-        width: 72%;
+        width: 70%;
         margin: 0 auto;
     }
     .back-to-top {
         display: none;
+    }
+    .sub-footer {
+        margin-bottom: -100px;
     }
     .sub-footer aside {
         display: inline;
