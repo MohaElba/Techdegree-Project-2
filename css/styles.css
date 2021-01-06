@@ -169,9 +169,19 @@ a:hover {
 
 /* Media Queries -------------------------*/
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
+    ul {
+        padding: 0;
+    }
     .profile-image {
         width: 80%;
+    }
+    .sub-footer span {
+        font-size: 0.8em;
+    }
+    .sub-footer a {
+        padding: 20px 20px 0 0;
+        font-size: 0.8em;
     }
 }
 
