@@ -291,8 +291,6 @@ a:hover {
     }
     header nav {
         float: right;
-        position: absolute;
-        left: 58%;
     }
     /* Main -------------------------*/
     .marketing {
